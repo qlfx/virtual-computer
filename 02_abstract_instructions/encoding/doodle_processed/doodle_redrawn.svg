@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1390" height="360" viewBox="0 0 1390 360">
+<rect width="1390" height="360" fill="white"/>
+<g fill="none" stroke="black" stroke-width="4" stroke-linejoin="round">
+<polyline points="18,100 40,100"/>
+<ellipse cx="60" cy="100" rx="20" ry="26"/>
+<polyline points="80,100 104,100"/>
+<ellipse cx="124" cy="100" rx="20" ry="26"/>
+<polyline points="104,100 144,100"/>
+<polyline points="144,100 168,100"/>
+<ellipse cx="188" cy="100" rx="20" ry="26"/>
+<polyline points="208,100 232,100"/>
+<ellipse cx="252" cy="100" rx="20" ry="26"/>
+<polyline points="272,100 296,100"/>
+<ellipse cx="316" cy="100" rx="20" ry="26"/>
+<polyline points="296,100 336,100"/>
+<polyline points="336,100 360,100"/>
+<ellipse cx="380" cy="100" rx="20" ry="26"/>
+<polyline points="400,100 424,100"/>
+<ellipse cx="444" cy="100" rx="20" ry="26"/>
+<polyline points="464,100 488,100"/>
+<ellipse cx="508" cy="100" rx="20" ry="26"/>
+<polyline points="528,100 552,100"/>
+<ellipse cx="572" cy="100" rx="20" ry="26"/>
+<polyline points="592,100 616,100"/>
+<ellipse cx="636" cy="100" rx="20" ry="26"/>
+<polyline points="616,100 656,100"/>
+<polyline points="656,100 680,100"/>
+<ellipse cx="700" cy="100" rx="20" ry="26"/>
+<polyline points="680,100 720,100"/>
+<polyline points="720,100 744,100"/>
+<ellipse cx="764" cy="100" rx="20" ry="26"/>
+<polyline points="784,100 808,100"/>
+<ellipse cx="828" cy="100" rx="20" ry="26"/>
+<polyline points="848,100 872,100"/>
+<ellipse cx="892" cy="100" rx="20" ry="26"/>
+<polyline points="872,100 912,100"/>
+<polyline points="912,100 936,100"/>
+<ellipse cx="956" cy="100" rx="20" ry="26"/>
+<polyline points="976,100 1000,100"/>
+<ellipse cx="1020" cy="100" rx="20" ry="26"/>
+<polyline points="1000,100 1040,100"/>
+<polyline points="1040,100 1064,100"/>
+<ellipse cx="1084" cy="100" rx="20" ry="26"/>
+<polyline points="1104,100 1128,100"/>
+<ellipse cx="1148" cy="100" rx="20" ry="26"/>
+<polyline points="1128,100 1168,100"/>
+<polyline points="1168,100 1192,100"/>
+<ellipse cx="1212" cy="100" rx="20" ry="26"/>
+<polyline points="1192,100 1232,100"/>
+<polyline points="1232,100 1256,100"/>
+<ellipse cx="1276" cy="100" rx="20" ry="26"/>
+<polyline points="1296,100 1335,100 1335,260 1296,260"/>
+<ellipse cx="1276" cy="260" rx="20" ry="26"/>
+<polyline points="1256,260 1296,260"/>
+<polyline points="1256,260 1232,260"/>
+<ellipse cx="1212" cy="260" rx="20" ry="26"/>
+<polyline points="1192,260 1232,260"/>
+<polyline points="1192,260 1168,260"/>
+<ellipse cx="1148" cy="260" rx="20" ry="26"/>
+<polyline points="1128,260 1104,260"/>
+<ellipse cx="1084" cy="260" rx="20" ry="26"/>
+<polyline points="1064,260 1040,260"/>
+<ellipse cx="1020" cy="260" rx="20" ry="26"/>
+<polyline points="1000,260 976,260"/>
+<ellipse cx="956" cy="260" rx="20" ry="26"/>
+<polyline points="936,260 976,260"/>
+<polyline points="936,260 912,260"/>
+<ellipse cx="892" cy="260" rx="20" ry="26"/>
+<polyline points="872,260 912,260"/>
+<polyline points="872,260 848,260"/>
+<ellipse cx="828" cy="260" rx="20" ry="26"/>
+<polyline points="808,260 784,260"/>
+<ellipse cx="764" cy="260" rx="20" ry="26"/>
+<polyline points="744,260 784,260"/>
+<polyline points="744,260 720,260"/>
+<ellipse cx="700" cy="260" rx="20" ry="26"/>
+<polyline points="680,260 720,260"/>
+<polyline points="680,260 656,260"/>
+<ellipse cx="636" cy="260" rx="20" ry="26"/>
+<polyline points="616,260 592,260"/>
+<ellipse cx="572" cy="260" rx="20" ry="26"/>
+<polyline points="552,260 528,260"/>
+<ellipse cx="508" cy="260" rx="20" ry="26"/>
+<polyline points="488,260 464,260"/>
+<ellipse cx="444" cy="260" rx="20" ry="26"/>
+<polyline points="424,260 464,260"/>
+<polyline points="424,260 400,260"/>
+<ellipse cx="380" cy="260" rx="20" ry="26"/>
+<polyline points="360,260 400,260"/>
+<polyline points="360,260 336,260"/>
+<ellipse cx="316" cy="260" rx="20" ry="26"/>
+<polyline points="296,260 272,260"/>
+<ellipse cx="252" cy="260" rx="20" ry="26"/>
+<polyline points="232,260 272,260"/>
+<polyline points="232,260 208,260"/>
+<ellipse cx="188" cy="260" rx="20" ry="26"/>
+<polyline points="168,260 208,260"/>
+<polyline points="168,260 144,260"/>
+<ellipse cx="124" cy="260" rx="20" ry="26"/>
+<polyline points="104,260 144,260"/>
+<polyline points="104,260 80,260"/>
+<ellipse cx="60" cy="260" rx="20" ry="26"/>
+<polyline points="40,260 80,260"/>
+<polyline points="40,260 18,260"/>
+</g>
+</svg>

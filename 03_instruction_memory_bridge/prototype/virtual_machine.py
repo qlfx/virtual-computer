@@ -1,0 +1,90 @@
+Memory_Physical = [[0,1,2,3,4,5,6,7],[0,1,2,3],[0,1,2,3],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]]
+ #三块物理内存，一块有8bit，一块4bit，一块4bit，一共16bit
+Memory_Bits =     [[1,1,0,1,0,0,1,1],[1,1,0,1],[0,0,1,1],[1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,1]]
+Types = ["Int4","Int8"]
+Memory_of_types = [4,8]
+
+class Memory:
+    memory_number = 0
+    memory_virtual = []
+    memory_pointer = 0
+    def __init__(self,memory_numberal):
+        self.memory_number = memory_numberal
+        self.memory_virtual = Memory_Bits[self.memory_number]
+        self.memory_pointer = 0
+    def init_memory(self):
+        for i in range(len(self.memory_virtual)):
+            self.memory_virtual[i] = 0
+
+    def move_to_right(self):
+        self.memory_pointer = (self.memory_pointer + 1) % (len(self.memory_virtual))
+
+    def move_to_left(self):
+        self.memory_pointer = (self.memory_pointer - 1) % (len(self.memory_virtual))
+
+    def wright_one(self):
+        self.memory_virtual[self.memory_pointer] = 1
+
+    def wright_zero(self):
+        self.memory_virtual[self.memory_pointer] = 0
+
+class checker:
+    def type_check(type):
+        if type not in Types:
+            raise ValueError("未定义类型")
+        return True
+
+    def memory_check(type,memory_index,address):
+        if address + Memory_of_types[Types.index(type)] > len(Memory_Physical[memory_index]):
+            if address + Memory_of_types[Types.index(type)] > len(Memory_Physical[3]):
+                raise ValueError("内存溢出")
+            return 3
+        return memory_index
+
+def read_bit_from_Memory(memory_index,address):
+        return Memory_Bits[memory_index][address]
+
+def get_Type_value_from_Memory_Address(type,memory_index,address):
+    value = 0
+    checker.type_check(type)
+    memory_index_used = checker.memory_check(type,memory_index,address)
+    type_index = Types.index(type)
+    type_memory = Memory_of_types[type_index]
+    bits_to_be_parsed = []
+    for i in range(type_memory):
+        address_current = address + i
+        bits_to_be_parsed.append(read_bit_from_Memory(memory_index_used,address_current))
+    for i in range(type_memory):
+        value = value + 2**i * bits_to_be_parsed[i]
+    return value
+
+def defTypeStructure(types,new_type):
+    def wheather_in_defined_Types():
+        for type in types:
+            checker.type_check(type)
+        return True
+    def get_total_memory():
+        total_memory = 0
+        for type in types:
+            total_memory = total_memory + Memory_of_types[Types.index(type)]
+        return total_memory
+    wheather_in_defined_Types()
+    Types.append(new_type)
+    Memory_of_types.append(get_total_memory())
+
+# print(get_Type_value_from_Memory_Address("Int8",0,0))
+# defTypeStructure(["Int4","Int4"],"fuck")
+# defTypeStructure(["fuck","Int8"],"nigger")
+# print(get_Type_value_from_Memory_Address("fuck",0,0))
+# print(get_Type_value_from_Memory_Address("nigger",0,0))
+# defTypeStructure(["sex"],"chingchong")
+
+# vm = Memory(0)
+# vm.init_memory()
+# print(vm.memory_virtual)
+# vm.wright_one()
+# vm.move_to_left()
+# vm.wright_one()
+# vm.move_to_right()
+# vm.wright_zero()
+# print(vm.memory_virtual)

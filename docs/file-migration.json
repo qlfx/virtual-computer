@@ -1,0 +1,122 @@
+[
+  {
+    "original": "doodle_code_0101.png",
+    "current": "02_abstract_instructions/encoding/doodle_code_0101.png",
+    "sha256": "5FD714E3A34B0B8411792462008575CA056EF27E8B8E2948C591F221D93686FC"
+  },
+  {
+    "original": "doodle_processed/doodle_redrawn.png",
+    "current": "02_abstract_instructions/encoding/doodle_processed/doodle_redrawn.png",
+    "sha256": "E3207AB9C963476A8EE2FE0CD8D210BB27C23EA1B46AFDD6CFFAB613BC7352C5"
+  },
+  {
+    "original": "doodle_processed/doodle_redrawn.svg",
+    "current": "02_abstract_instructions/encoding/doodle_processed/doodle_redrawn.svg",
+    "sha256": "5EC47D86DFCAD65FD2561B833477D2501B9BCA649E91526491E57009BAAA6B4F"
+  },
+  {
+    "original": "doodle_processed/generate_demo.py",
+    "current": "02_abstract_instructions/encoding/doodle_processed/generate_demo.py",
+    "sha256": "7F04EB61AB9FC379EBA515D267682B40415C936A1E5CCFA69B2B7438F7D09DDF"
+  },
+  {
+    "original": "doodle_processed/verification.json",
+    "current": "02_abstract_instructions/encoding/doodle_processed/verification.json",
+    "sha256": "5F885BA5EFC453596CEB11558BDB91E10C16FB952228D749898E2806E2B1B0E2"
+  },
+  {
+    "original": "file_parse.py",
+    "current": "02_abstract_instructions/encoding/file_parse.py",
+    "sha256": "618598F8DB5AF9B4E0B1BDBE87111C73F7BD66DB7921AB236074D47242E38F6E"
+  },
+  {
+    "original": "hv_encoding_lab.py",
+    "current": "02_abstract_instructions/encoding/hv_encoding_lab.py",
+    "sha256": "3180B1381CA2950A8D7B44A7C55E52B901F97A975615F5549EE81C470E6BD5A0"
+  },
+  {
+    "original": "memory_alias.py",
+    "current": "01_memory_simulation/memory_alias.py",
+    "sha256": "A7FE9675E1F856BC4FEDC53E5D38C53D5042CA299B173FD5847CBF1BA572FE0B"
+  },
+  {
+    "original": "memory_alias2.py",
+    "current": "01_memory_simulation/memory_alias2.py",
+    "sha256": "E64D909BB2E3979DBFAD6D91F4980AE8134D40C9E0C640F3026BB2C21BD33E0C"
+  },
+  {
+    "original": "quine.hs",
+    "current": "02_abstract_instructions/quines/quine.hs",
+    "sha256": "30A931945C74C9B42C7D174766D92EEDBF76FD3DA051CE9A9A5026E79F07346D"
+  },
+  {
+    "original": "quine.py",
+    "current": "02_abstract_instructions/quines/quine.py",
+    "sha256": "F76FF032313E8BACD63AFABE44E7E96329BBDC018C652A6904E4DD0D62F0D3D4"
+  },
+  {
+    "original": "signs_programming/hankuk/hankuk_quine_interpret.py",
+    "current": "02_abstract_instructions/hankuk/hankuk_quine_interpret.py",
+    "sha256": "B2EEACB69BCA7F0B7946F86FBEA8E079EA62095381A77029C8EB822F0DEE79D9"
+  },
+  {
+    "original": "signs_programming/hankuk/hankuk_quine_interpret.py.before-completion.bak",
+    "current": "archive/signs_programming/hankuk/hankuk_quine_interpret.py.before-completion.bak",
+    "sha256": "A2B5E28A9F6F16DDB37E4D27188142355D6CBE1C1B5FBF98D3B5ACF962EBCD75"
+  },
+  {
+    "original": "signs_programming/hankuk/hankuk_quine_interpret.py.before-kr-runner.bak",
+    "current": "archive/signs_programming/hankuk/hankuk_quine_interpret.py.before-kr-runner.bak",
+    "sha256": "B626118D91C58D5ED08E26ED16148FCBFE491DA2F874C4A04014F12AD6686D6C"
+  },
+  {
+    "original": "signs_programming/hankuk/main.py",
+    "current": "02_abstract_instructions/hankuk/main.py",
+    "sha256": "E947CFD06FD4F31689C77F6009B1AA6D5F6A599BC72666ADBD43F87C0160AD44"
+  },
+  {
+    "original": "signs_programming/hankuk/memory_wr.py",
+    "current": "03_instruction_memory_bridge/prototype/memory_wr.py",
+    "sha256": "CDB6414D1A90815ABB537740D3D10DAA97FD758DDBCEDF151CF2386E79F74E55"
+  },
+  {
+    "original": "signs_programming/hankuk/memory_wr.py.before-completion.bak",
+    "current": "archive/signs_programming/hankuk/memory_wr.py.before-completion.bak",
+    "sha256": "2E410582FF56F4EE91AFAFE9DC66DB7C8C5EF5D9B504A6015CDB6F9B935E5ECF"
+  },
+  {
+    "original": "signs_programming/hankuk/quine.kr",
+    "current": "02_abstract_instructions/hankuk/quine.kr",
+    "sha256": "E7CC1A98CB4143A9822B15BDB52F6461AABCC5BE10B99C50DF509BE868C4C4C3"
+  },
+  {
+    "original": "signs_programming/hankuk/tempCodeRunnerFile.py",
+    "current": "archive/signs_programming/hankuk/tempCodeRunnerFile.py",
+    "sha256": "C1E666CE942400C4AB3FF8F8877EEABEFF7EFC20A9DA2D9350BB24FBEE3745F9"
+  },
+  {
+    "original": "signs_programming/hankuk/virtual_machine.py",
+    "current": "03_instruction_memory_bridge/prototype/virtual_machine.py",
+    "sha256": "CD00B8CB2B476950070BEA6FDDA7B93DD3498C98D773861EF5BAA28CD54802BD"
+  },
+  {
+    "original": "signs_programming/hankuk/virtual_machine.py.before-completion.bak",
+    "current": "archive/signs_programming/hankuk/virtual_machine.py.before-completion.bak",
+    "sha256": "88F3F79E0D95EE20B86A4CE29FFAD3D3AC6EDFC0D9C0876120404CFE3CA5B942"
+  },
+  {
+    "original": "tempCodeRunnerFile.py",
+    "current": "archive/tempCodeRunnerFile.py",
+    "sha256": "08F07A82825D927318C99671D6574DD3B142DA4071AB140649AFCB374B1D5862"
+  },
+  {
+    "original": "virtual_machine.py",
+    "current": "01_memory_simulation/virtual_machine.py",
+    "sha256": "AA6E48FD4C4CCAC0D11043E555D622316AC3857F62DF9141003789F16D5812CF"
+  },
+  {
+    "original": "virtual_memory_experiment.py",
+    "current": "01_memory_simulation/virtual_memory_experiment.py",
+    "sha256": "ABB75A8333A11B67F79FEBB8FE8959EFD80429F241065295E4C17E4F6CE1F50A"
+  }
+]

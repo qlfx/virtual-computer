@@ -1,0 +1,99 @@
+variables = []
+variable_values = []
+variables_to_be_used = []
+
+# 我希望做的是：把代码分解为两部分，一部分存储关键字的指令，一部分进行变量绑定。
+# 引用区外通过空白分隔命令；쓰 代表打印，것:[...] 定义变量 것。
+def split_code_to_command(code):
+    if not isinstance(code, str):
+        raise TypeError("代码必须是字符串。")
+
+    commands = []
+    i = 0
+    while i < len(code):
+        if code[i].isspace():
+            i += 1
+            continue
+
+        start = i
+        if code.startswith("것:[", i):
+            # 只有变量定义的 [ 才开始引用；쓰[ 和 쓰] 是普通打印命令。
+            i += len("것:[")
+            depth = 1
+            while i < len(code) and depth:
+                if code[i] == "[":
+                    depth += 1
+                elif code[i] == "]":
+                    depth -= 1
+                i += 1
+
+            if depth:
+                raise SyntaxError("变量定义缺少匹配的右方括号。")
+            if i < len(code) and not code[i].isspace():
+                raise SyntaxError("变量定义之后需要空白或代码结束。")
+        else:
+            while i < len(code) and not code[i].isspace():
+                i += 1
+
+        commands.append(code[start:i])
+    return commands
+
+
+def parse_command(command):
+    # 第一遍只登记变量及引用，不执行打印。
+    if command.startswith("쓰"):
+        name = command[1:]
+        if not name:
+            raise SyntaxError("쓰 后需要变量名、[ 或 ]。")
+        if name not in ("[", "]") and name not in variables_to_be_used:
+            variables_to_be_used.append(name)
+        return
+
+    if command.startswith("것:[") and command.endswith("]"):
+        name = "것"
+        if name in variables:
+            raise SyntaxError("变量 것 重复定义。")
+        variables.append(name)
+        # 整段保存为一个字符串；内部的命令、空格和方括号都只是数据。
+        variable_values.append(command[len("것:["):-1])
+        return
+
+    raise SyntaxError(f"无法识别的命令：{command!r}")
+
+
+def parse_command_to_action(command):
+    if command.startswith("쓰"):
+        name = command[1:]
+        if name in ("[", "]"):
+            value = name
+        else:
+            if name not in variables:
+                raise NameError(f"变量 {name!r} 尚未定义。")
+            value = variable_values[variables.index(name)]
+
+        # 连续拼接，不能让 Python 的 print 自动加入换行或空格。
+        print(value, end="")
+        return value
+
+    # 变量定义已经在第一遍登记，第二遍不产生输出。
+    return ""
+
+def compile(code):
+    # 每次解释一段新代码，都从空的变量环境开始。
+    variables.clear()
+    variable_values.clear()
+    variables_to_be_used.clear()
+
+    commands = split_code_to_command(code)
+    for command in commands:
+        parse_command(command)
+
+    # 两遍处理允许先引用、后定义；执行前检查所有变量是否已经绑定。
+    for name in variables_to_be_used:
+        if name not in variables:
+            raise NameError(f"变量 {name!r} 尚未定义。")
+
+    output = []
+    for command in commands:
+        output.append(parse_command_to_action(command))
+    return "".join(output)

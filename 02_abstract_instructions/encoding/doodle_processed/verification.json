@@ -1,0 +1,10 @@
+{
+  "input": "D:/TEMP/codex-clipboard-66c01914-f121-4011-a9f6-dbb8afbd3adc.jpg",
+  "method": "Read symbol sequence using official Doodle Code JavaScript after local contrast extraction, then reconstruct a clean vector diagram from the decoded bit sequence.",
+  "data_bits": "10010000110010101101100011011000110111",
+  "data_bit_count": 38,
+  "symbol_count_including_markers": 40,
+  "validation": "Official decoder JavaScript returned the same 38-bit sequence from the reconstructed PNG.",
+  "reading_direction": "Top row left-to-right; follow the right-hand connector down; bottom row right-to-left.",
+  "intent_caveat": "The result preserves the stably decoded sequence, which may differ from the user's intended message."
+}
