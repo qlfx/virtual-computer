@@ -1,0 +1,8 @@
+{
+  "extraPaths": [
+    "./memory_simulation",
+    "./memory_for_caculation",
+    "./type_realizer"
+  ]
+}
+

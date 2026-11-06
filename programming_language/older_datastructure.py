@@ -4,30 +4,6 @@ Memory_Bits =     [[1,1,0,1,0,0,1,1],[1,1,0,1],[0,0,1,1],[1,1,0,1,0,0,1,1,1,1,0,
 Types = ["Int4","Int8"]
 Memory_of_types = [4,8]
 
-class Memory:
-    memory_number = 0
-    memory_virtual = []
-    memory_pointer = 0
-    def __init__(self,memory_numberal):
-        self.memory_number = memory_numberal
-        self.memory_virtual = Memory_Physical[self.memory_number]
-        self.memory_pointer = 0
-    def init_memory(self):
-        for i in range(len(self.memory_virtual)):
-            self.memory_virtual[i] = 0
-
-    def move_to_right(self):
-        self.memory_pointer = (self.memory_pointer + 1) % (len(self.memory_virtual))
-
-    def move_to_left(self):
-        self.memory_pointer = (self.memory_pointer - 1) % (len(self.memory_virtual))
-
-    def wright_one(self):
-        self.memory_virtual[self.memory_pointer] = 1
-
-    def wright_zero(self):
-        self.memory_virtual[self.memory_pointer] = 0
-
 class checker:
     def type_check(type):
         if type not in Types:
@@ -71,20 +47,3 @@ def defTypeStructure(types,new_type):
     wheather_in_defined_Types()
     Types.append(new_type)
     Memory_of_types.append(get_total_memory())
-
-# print(get_Type_value_from_Memory_Address("Int8",0,0))
-# defTypeStructure(["Int4","Int4"],"fuck")
-# defTypeStructure(["fuck","Int8"],"nigger")
-# print(get_Type_value_from_Memory_Address("fuck",0,0))
-# print(get_Type_value_from_Memory_Address("nigger",0,0))
-# defTypeStructure(["sex"],"chingchong")
-
-# vm = Memory(0)
-# vm.init_memory()
-# print(vm.memory_virtual)
-# vm.wright_one()
-# vm.move_to_left()
-# vm.wright_one()
-# vm.move_to_right()
-# vm.wright_zero()
-# print(vm.memory_virtual)

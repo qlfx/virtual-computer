@@ -1,1 +1,0 @@
-defTypeStructure(["sex"],"chingchong")

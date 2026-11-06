@@ -3,7 +3,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from hankuk_quine_interpret import compile as run_code
+from programming_language.hankuk.hankuk_quine_interpret import compile as run_code
 
 
 def run_file(path):
