@@ -2,7 +2,8 @@
   "extraPaths": [
     "./memory_simulation",
     "./memory_for_caculation",
-    "./type_realizer"
+    "./type_realizer",
+    "./working_space"
   ]
 }
 

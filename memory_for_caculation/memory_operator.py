@@ -5,9 +5,10 @@ import virtual_machine
 Types = ["Int","Char","Bool"]  #这个应该是数据解读规律，储存在一个特殊的地方
 Type_Size = [4,8,1]
 
-m1 = virtual_machine.Memory(8)
-m2 = virtual_machine.Memory(8)
-Memories = [m1,m2]
+WorkSpace_Memory = virtual_machine.Memory(1024)
+Type_Memory = virtual_machine.Memory(1024)
+Function_Memory = virtual_machine.Memory(1024)
+Memories = [WorkSpace_Memory,Type_Memory,Function_Memory]
 
 #这部分是变量名、类型、储存地址的信息，储存在另一个地方
 variable_name_list = []

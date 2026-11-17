@@ -1,3 +1,4 @@
+'''用来创建虚拟内存条'''
 class Memory:
     def __init__(self,bits):
         self.memory_size = bits

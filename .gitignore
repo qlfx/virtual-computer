@@ -7,3 +7,5 @@ venv/
 .DS_Store
 Thumbs.db
 tempCodeRunnerFile.py
+/working_space/Function_Memory.json
+/working_space/*_working_space.json
